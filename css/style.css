@@ -1,0 +1,309 @@
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+
+ /* Primary Styles
+    Author: Zak Caley
+    Rubberpigeon Design (http://www.rubberpigeon.com)
+    For: qnp 2011
+ */
+
+
+/* wireframe */
+
+	html, body, #container {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	space {
+		background: #000;
+		color: #fff;
+	}
+	#sky {
+		background: blue;
+	}
+	
+	footer {
+		background: brown;
+		color: white;
+		min-height: 20px;
+		width: 300%;
+	}
+	
+	.row {
+		width: 300%;
+		float: left;
+		clear: both;
+		min-height: 100%;
+	}
+
+	.one, .two, .three {
+		width: 33.33%;
+		height: auto;
+		min-height: 100%;
+		padding-top: 50px;
+		position: relative;
+	}
+	.one {
+	float: left;
+	clear: both;
+	}
+	.two {
+		margin: 0 auto;
+	}
+	.three {
+		float: right;
+	}
+	#blog {
+		clear: both; 
+	}
+	#blank {}
+	
+	a.right {
+		float: right;
+/* 		display: none; */
+		clear: both;
+	}
+	
+	main {
+		background: url(../img/sky.jpg) repeat-x;
+		padding-top: 784px;
+	}
+/* header bar */
+	header {
+		background: #1e1e1e;
+		height: 17px;
+		color: #fff;
+		position: fixed;
+		width: 100%;
+		padding: 7px;
+		z-index: 1000;
+	}
+	
+		.logo {
+			float: left;
+			height: 20px;
+			width: 100px:
+			padding: 5px;
+		}
+		ul.primary-links {
+			float: right;
+			list-style: none;
+			margin-right: 30px;
+		}
+		ul.primary-links li {
+			float: left;
+		}
+		
+		ul.primary-links a {
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		ul.primary-links a:hover {
+			color: red;
+			text-decoration: none;
+		}
+
+/* zeppeline */
+
+					#zepgraphic {
+						background: url(../img/zep.png) no-repeat transparent; 
+						height: 650px; 
+						width: 522px;
+						position: relative;
+						float: left;
+						margin-left: 20px;
+						margin-top: 20px;
+					}
+					
+					#zepgraphic a {
+						width: 100%;
+						height: 100%;
+						display: block;
+						text-indent: -9999px
+					}
+					
+					#zepgraphic ul, #zepgraphic ul li{
+						list-style: none;
+						text-indent: -9999px;
+/* 						border: 1px solid; */
+					}
+					#zepgraphic li#elephant {
+						background:url(../img/elephant.png) no-repeat transparent 1000px 1000px;
+						width:147px; 
+						height:135px;
+						position: absolute;
+    				left: -30px;
+    				top: 144px;
+					}		
+					#zepgraphic li#elephant:hover {
+						background-position: 0 37px;
+					}
+					#zepgraphic li#drops {
+						background:url(../img/drops.png) no-repeat transparent 1000px 1000px;
+    				height: 125px;
+    				left: 54px;
+    				position: absolute;
+    				top: 265px;
+    				width: 159px;
+					}		
+					#zepgraphic li#drops:hover {
+						background-position: -11px 53px;
+					}
+					#zepgraphic li#snake {
+						background:url(../img/snake.png) no-repeat transparent -1000px -1000px;
+						width:155px; 
+						height:127px;
+						position: absolute;
+    				left: 233px;
+    				top: 299px;
+					}		
+					#zepgraphic li#snake:hover {
+						background-position: 31px 52px;
+					}					
+					#zepgraphic li#bandaid {
+						background:url(../img/bandaid.png) no-repeat transparent -1000px -1000px;
+						width:147px; 
+						height:127px;
+						position: absolute;
+    				left: 340px;
+    				top: 134px;
+					}		
+					#zepgraphic li#bandaid:hover {
+						background-position: 62px 58px;
+					}				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
