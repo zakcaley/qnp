@@ -19,68 +19,80 @@
   <script src="js/libs/modernizr-1.7.min.js"></script>
 
 </head>
-
 <body>
-
   <div id="container">
-    <header>
-			<div class="logo">qnp</div>
-			<debug style="padding-left: 50px;">
-			</debug>
-			<ul class="primary-links" >
-				<li id="home"> :: <a href="#zep">Home </a> : </li>
-				<li id="elephant"> :<a href="#illu"> llustrations </a> : </li>
-				<li id="drops"> : <a href="#contact"> Contact </a> : </li>
-				<li id="snake"> : <a href="#blog"> Blog </a> : </li>
-				<li id="bandaid"> : <a href="#lab"> Labratory </a> :: </li>
-			</ul>
+    <foreground>
+    	    <header>
+		<div class="logo">qnp</div>
+		<div id="fps" style="padding-left: 10px; display:inline"></div>
+		<debug style="padding-left: 10px;"></debug>
+		<debug1 style="padding-left: 10px;"></debug1>
+		<debug2 style="padding-left: 10px;"></debug2>
+		<debug3 style="padding-left: 10px;"></debug3>		
+		<debug4 style="padding-left: 10px;"></debug4>
+		<debug5 style="padding-left: 10px;"></debug5>
+		<debug6 style="padding-left: 10px;"></debug6>
+		<ul class="primary-links" >
+			<li id="elephant"> ::<a href="#draw" title="Drawings" rel="draw"> Drawings </a> : </li>
+			<li id="drops"> : <a href="#contact" title="Contact Us" rel="contact"> Contact </a> : </li>
+			<li id="snake"> : <a href="#blog" title="The Blog" rel="blog"> Blog </a> : </li>
+			<li id="bandaid"> : <a href="#lab" title="Code Decay" rel="lab"> Labratory </a> : </li>
+			<li id="pipes"> : <a href="#photo" title="Light Stalking" rel="photo"> Photography </a> :: </li>
+		</ul>
     </header>
+    	<div id="zepcanvas"></div>
+    </foreground>
     <div id="main" role="main">
-				<space class="row">
-					<loading class="one">
+		<space class="row">
+			<loading class="one">
+				this contains the preloading information if your internet sucks balls
+				loading 
+			</loading>
+			<lab class="three">    							
 
-						this contains the preloading information if your internet sucks balls
-					</loading>
-					<lab class="three">
-						<a name="lab" class="right">lab</a>
-						Coding Section this i want to load in from json, why because i can not because of anything useful.
-					</lab>
-				</space>
-		    <div class="clearfix"></div>
+				<a name="lab" class="right" id="lab"></a>
+			</lab>
+		</space>
+	    <div class="clearfix"></div>
+	    <main class="row">
+			<div id="zephome" class="two">
+				<a name="zep" class="left" id="zep"></a>
+			</div>
+			<div  class="one">
 
-		    <main class="row">
-						<illusrtations class="one">
-							<a name="illu">Illustrations</a>
-							this contains the illustration section for domnik
-						</illusrtations>
-
-						<div id="home" class="two">
-							<a name="zep" class="right">zep</a>
-							fuck me
-							<!-- refined zeplin html5 style -->
-					    <div id="zepcanvas">
-		<!--
-					    	<div id="zepgraphic">
-									<ul>
-										<li id="elephant"><a href="#illu">Illustrations</a></li>
-										<li id="drops"><a href="#contact">Contact</a></li>
-										<li id="snake"><a href="#blog">Blog</a></li>
-										<li id="bandaid"><a href="#lab">Labratory</a></li>
-									</ul>
-								</div>
-		-->
-					    </div>
-
-						</div>
-
-						<div id="blog" class="two" style="height: 2999px">
-							<a name="blog" class="right">Blog</a>
-							blog section goes here
-						</div>
-		    </main>
+			</div> 
+			<div id="blog" class="two">
+				<div id ="building" style="min-height: 1145px; margin: 0 auto; width: 955px; padding: 0px 100px 0; 	background: url(img/building-rep.png) repeat-y 50% 0;">
+					<a name="building" style="float:right"></a>
+					<p></p>
+					<div id="internal" style=" height: 100%;margin: 0 auto; width: 555px; padding: 50px 0 100px 0px;">
+						<p></p>
+						<div style="background:#132; width: 555px; height: 200px; margin-bottom: 50px;opacity: 0.9;">post</div>
+						<div style="background:#132;width: 555px; height: 400px; margin-bottom: 50px;opacity: 0.9;">post</div>
+						<div style="background:#132;width: 555px; height: 300px; margin-bottom: 50px;opacity: 0.9;">post</div>
+						<div style="background:#132;width: 555px; height: 400px; margin-bottom: 50px;opacity: 0.9;">post</div>
+					</div>
+				</div>
+			</div>
+	    </main>
     </div>
+    <div class="clearfix"></div>
+    <div  style="position:relative;">
+				<div id="photo" style="position:absolute; top:-1700px;">
+					<a name="photo" class="left" id="photo">photo</a>
+					<img src="img/photatoes.png" width="800px">
+				</div>
+	</div>
     <footer>
-		this is the closing footer, site map etc
+
+		<img src="img/city.png" style="margin: -1017px 0px 0 0;" width="2138px"><br>
+		<!-- <blueprint style="    background: none repeat scroll 0 0 blue;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    width: 955px;">
+			this will contain in the site map, and should be over the city limi
+		</blueprint> -->
     </footer>
   </div> 
 
@@ -89,6 +101,7 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
+  <script src="js/mylibs/jquery.scrollTo-1.4.2.js"></script>
   <script src="js/script.js"></script>
   <!-- end scripts-->
 
@@ -98,12 +111,12 @@
   <![endif]-->
 
 
-  <script>
+  <!-- <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  </script> -->
 
 </body>
 </html>
