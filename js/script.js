@@ -1,6 +1,8 @@
 /* Author:  Zak Caley - Rubber Pigeon Desing (http://www.rubberpigeon.com)
 	for qnp 2011
 */
+
+
 var current, launch, launched, landed, 	running = false;
 
 function hashjumpto(link) {
@@ -41,7 +43,8 @@ function windowSize(check) {
         //Non-IE
         winWidth = window.innerWidth;
         winHeight = window.innerHeight;
-    } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+    } else if (document.documentElement && 
+    	(document.documentElement.clientWidth || document.documentElement.clientHeight)) {
         //IE 6+ in 'standards compliant mode'
         winWidth = document.documentElement.clientWidth;
         winHeight = document.documentElement.clientHeight;
